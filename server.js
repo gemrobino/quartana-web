@@ -5,11 +5,11 @@ const port = 3000;
 app.use(express.urlencoded({extended: true}));
 
 app.get("/", (req,res) => {
-  res.sendfile(__dirname + "/dashboard.html")
+  res.sendFile(__dirname + "/index.html")
 })
 
 app.get("/dashboard", (req,res) => {
-  res.sendfile(__dirname + "/dashboard.html")
+  res.sendFile(__dirname + "/dashboard.html")
 })
 
 app.post("/submitForm", (req,res) => {
