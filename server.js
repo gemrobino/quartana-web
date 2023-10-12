@@ -3,24 +3,21 @@ const app = express();
 const port = 3000;
 
 app.use(express.urlencoded({extended: true}));
+app.use(express.static(__dirname + '/src'));
+app.use('/images', express.static(__dirname + 'src/images'));
+app.use('/styles', express.static(__dirname + '/styles'));
+app.use('/js', express.static(__dirname + '/js'));
 
 app.get("/", (req,res) => {
-  res.sendFile(__dirname + "/index.html")
+  res.sendFile(__dirname + "/src/index.html")
+})
+
+app.get("/home", (req,res) => {
+  res.sendFile(__dirname + "/src/index.html")
 })
 
 app.get("/dashboard", (req,res) => {
-  res.sendFile(__dirname + "/dashboard.html")
-})
-
-app.post("/submitForm", (req,res) => {
-  const username  = req.body.username;
-  const password = req.body.password;
-  let result = "success! name is "+ username
-  res.send(result)
-})
-
-app.post("/addUser", (req,res) => {
-  res.send("Hello World! from addUser post")
+  res.sendFile(__dirname + "/src/dashboard.html")
 })
 
 app.listen(port, () =>{
