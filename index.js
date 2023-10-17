@@ -34,26 +34,26 @@ app.get("/dashboard", (req,res) => {
   res.render("dashboard", {data})
 })
 
-app.get("/charts", (req,res) => {
-  res.sendFile("./src/charts.html")
-})
+// app.get("/charts", (req,res) => {
+//   res.sendFile("./src/charts.html")
+// })
 
-app.get("/tables", (req,res) => {
-  res.sendFile("./src/tables.html")
-})
+// app.get("/tables", (req,res) => {
+//   res.sendFile("./src/tables.html")
+// })
 
-app.get("/utilities-color", (req, res) => {
-  res.sendFile("./src/other_pages/utilities-color.html")
-})
-app.get("/utilities-border", (req, res) => {
-  res.sendFile("./src/other_pages/utilities-border.html")
-})
-app.get("/utilities-animation", (req, res) => {
-  res.sendFile("./src/other_pages/utilities-animation.html")
-})
-app.get("/utilities-other", (req, res) => {
-  res.sendFile("./src/other_pages/utilities-other.html")
-})
+// app.get("/utilities-color", (req, res) => {
+//   res.sendFile("./src/other_pages/utilities-color.html")
+// })
+// app.get("/utilities-border", (req, res) => {
+//   res.sendFile("./src/other_pages/utilities-border.html")
+// })
+// app.get("/utilities-animation", (req, res) => {
+//   res.sendFile("./src/other_pages/utilities-animation.html")
+// })
+// app.get("/utilities-other", (req, res) => {
+//   res.sendFile("./src/other_pages/utilities-other.html")
+// })
 
 app.all('*', (req, res, next) => {
   res.status(404);
