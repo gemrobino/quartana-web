@@ -2,10 +2,11 @@
   "name": "quartana",
   "version": "1.0.0",
   "description": "A Web application for displaying data-driven insights and to visualize complex datasets",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "test",
-    "dev": "nodemon server.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
