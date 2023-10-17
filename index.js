@@ -34,24 +34,24 @@ app.get("/dashboard", (req,res) => {
 })
 
 app.get("/charts", (req,res) => {
-  res.sendfile("./src/charts.html")
+  res.sendFile("./src/charts.html")
 })
 
 app.get("/tables", (req,res) => {
-  res.sendfile("./src/tables.html")
+  res.sendFile("./src/tables.html")
 })
 
 app.get("/utilities-color", (req, res) => {
-  res.sendfile("./src/other_pages/utilities-color.html")
+  res.sendFile("./src/other_pages/utilities-color.html")
 })
 app.get("/utilities-border", (req, res) => {
-  res.sendfile("./src/other_pages/utilities-border.html")
+  res.sendFile("./src/other_pages/utilities-border.html")
 })
 app.get("/utilities-animation", (req, res) => {
-  res.sendfile("./src/other_pages/utilities-animation.html")
+  res.sendFile("./src/other_pages/utilities-animation.html")
 })
 app.get("/utilities-other", (req, res) => {
-  res.sendfile("./src/other_pages/utilities-other.html")
+  res.sendFile("./src/other_pages/utilities-other.html")
 })
 
 app.all('*', (req, res, next) => {
