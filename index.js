@@ -7,8 +7,8 @@ app.set('view engine', 'ejs')
 app.set('views', './src')
 
 app.use(express.static(__dirname + '/src'));
-app.use('/images', express.static(__dirname + '/img'));
-app.use('/js', express.static(__dirname + '/js'));
+app.use('/images', express.static(__dirname + 'src/img'));
+app.use('/js', express.static(__dirname + 'src/js'));
 
 // app.use(express.urlencoded({extended: true}));
 
@@ -57,22 +57,8 @@ app.get("/utilities-other", (req, res) => {
 app.all('*', (req, res, next) => {
   res.status(404);
   res.render('Error', {ErrorCode: 404});
-  res.send();
 })
 
-
-
-// app.get("/contact", (req,res) => {
-//   res.sendfile(__dirname + "/contact.html")
-// })
-// app.get("/my-works", (req,res) => {
-//   // res.sendfile(__dirname + "/src/my-works.html")
-//   const colors = [
-//     {name:'green', hex:'#00ff00'},
-//     {name:'red', hex:'#ff0000'}
-//   ];
-//   res.render('my-works', {colors})
-// })
 
 
 app.listen(port, () =>{
