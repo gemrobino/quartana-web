@@ -100,19 +100,6 @@ app.get("/dashboard", (req,res) => {
   res.render("dashboard", {data})
 })
 
-// app.get("/contact", (req,res) => {
-//   res.sendfile(__dirname + "/contact.html")
-// })
-// app.get("/my-works", (req,res) => {
-//   // res.sendfile(__dirname + "/src/my-works.html")
-//   const colors = [
-//     {name:'green', hex:'#00ff00'},
-//     {name:'red', hex:'#ff0000'}
-//   ];
-//   res.render('my-works', {colors})
-// })
-
-
 app.listen(port, () =>{
  console.log(`Server Running at port ${port}`)
 })
