@@ -1,0 +1,72 @@
+/* Réinitialisation des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de la section */
+.project-details {
+    display: flex;
+    /* Utilisation de Flexbox pour les colonnes */
+    justify-content: space-between;
+    /* Espace égal entre les colonnes */
+
+    /* Couleur d'arrière-plan de la section */
+    padding: 0px;
+    /* Espace intérieur de la section */
+}
+
+/* Style des colonnes */
+.column {
+    flex-basis: 100%;
+
+    /* Largeur de chaque colonne (48% pour deux colonnes) */
+    padding: 40px;
+
+    /* Espace intérieur des colonnes */
+    background-color: #49707A;
+    /* Couleur d'arrière-plan des colonnes */
+    border: 0px solid #ccc;
+    /* Bordure autour des colonnes */
+    text-align: center;
+    /* Centrer le contenu */
+}
+
+#img-p {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff1d;
+    border-radius: 30%;
+}
+
+.card-p {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #ffde59;
+    border-radius: 30%;
+    width: 275px;
+    height: 275px;
+}
+
+.column p {
+    padding: 20px;
+    font-size: 25px;
+    /* Taille de la police pour le texte */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Style du contenu dans les colonnes */
+
+.info p {
+    padding: 30px;
+    font-size: 30px;
+    /* Taille de la police pour le texte */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
