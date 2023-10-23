@@ -34,11 +34,11 @@ app.get("/dashboard", (req,res) => {
 })
 
 app.get("/charts", (req,res) => {
-  res.sendFile("./src/charts.html")
+  res.render("charts")
 })
 
 app.get("/tables", (req,res) => {
-  res.sendFile("./src/tables.html")
+  res.render("tables")
 })
 
 app.get("/utilities-color", (req, res) => {
