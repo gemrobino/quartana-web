@@ -41,6 +41,11 @@ app.get("/tables", (req,res) => {
   res.render("tables")
 })
 
+app.get("/threads", (req,res) => {
+  const threads_data = require('./src/js/threads_json.json');
+  res.render("threads", {threads_data})
+})
+
 app.get("/utilities-color", (req, res) => {
   res.sendFile("./src/other_pages/utilities-color.html")
 })

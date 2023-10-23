@@ -1,16 +1,68 @@
 <!-- Page Heading -->
-<p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme.
-    The charts below have been customized - for further customization options, please visit the <a
-        target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js
-        documentation</a>.
+<p class="mb-4">This dashboard is a dynamic tool used to visualize, analyze, and interpret data in a clear and actionable way. In a world where data is abundant and complex, a data analytics dashboard acts as a central hub that condenses diverse datasets into comprehensible, insightful visual representations.
+    <br>
+    The dataset we have used is the <strong>Threads Review</strong> dataset from Kaggle. A table of ratings and reviews for the Threads app from Meta (Facebook) after its release. <a
+        target="_blank" href="https://www.kaggle.com/datasets/jayagopal20/threads-app-reviews-dataset">The dataset is available here</a>.
 </p>
 
 <!-- Content Row -->
-<div class="row">
 
+<div class="row" style="justify-content: space-between;">
+    
+    <div class="col-xl-4 col-lg-5">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">App Ratings Donut Chart</h6>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <div class="chart-pie pt-4">
+                    <canvas id="myPieChart-ThreadsRatings"></canvas>
+                </div>
+                <hr>
+                In <strong style="color: #58D68D">GREEN</strong>, 5-star ratings from app users. And in <strong style="color: #D98880">RED</strong>, 1-star ratings from app users.
+                <br>
+                <code><a href="/threads">See full Threads dataset</a></code> file.
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-lg-5">
+    <div class="card shadow mb-4" style="padding: 0.5rem;">
+        <p><strong>Donut charts</strong> are a useful way to visualize how a whole (in this case, the total number of reviews) is distributed among its parts (the different star ratings and sources). They are especially effective for showing the relative proportions of categories within a dataset. </p>
+        <hr>
+        <p>
+            In the <strong>Ratings</strong> example, you can quickly see that the majority of reviews are in the "5-stars" and "1-star" categories, with the donut chart providing a visual representation of the distribution of customer ratings for the product.
+        </p>
+        <p>
+            In the <strong>Review Source</strong> example, you can quickly see that the majority of reviews are from the "Google Play" and a small amount from the "App Store" category. It can also be inferred that there are less reviews coming from iPhone users than Android users.
+        </p>
+    </div>
+
+    </div>
+    <div class="col-xl-4 col-lg-5">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Review Source Donut Chart</h6>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <div class="chart-pie pt-4">
+                    <canvas id="myPieChart-ThreadsSources"></canvas>
+                </div>
+                <hr>
+                In <strong style="color: #58D68D">GREEN</strong>, all users from App Store that have left a review. And in <strong style="color: #3498DB">BLUE</strong>, all users from Google Play that have left a review.
+                <br>
+                <code><a href="/threads">See full Threads dataset</a></code> file.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Dashboard content1 - (GEM)</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Word Cloud</h6>
         </div>
         <div class="card-body">
             <div class="text-center">
@@ -39,4 +91,6 @@
                 unDraw &rarr;</a>
         </div>
     </div>
+
+    
 </div>

@@ -31,10 +31,11 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+           
+                <div class="sidebar-brand-icon">
+                    <img src="img/logo1.png" style="width: 2.5rem; height: auto;"/>
                 </div>
-                <div class="sidebar-brand-text mx-3">Quartana</div>
+                <div class="sidebar-brand-text mx-1"><h4>Quartana</h4></div>
             </a>
 
             <!-- Divider -->
@@ -70,7 +71,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Preview Data</h6>
-                        <a class="collapse-item" href="threads_data.html">Threads</a>
+                        <a class="collapse-item" href="/threads">Threads</a>
                         <a class="collapse-item" href="malls_data.html">Malls</a>
                     </div>
                 </div>
@@ -335,7 +336,8 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <h1 class="h3 mb-2 text-gray-800">Dashboard</h1>
+                    <h1>Quartana Dashboard</h1>
+                    <h3 class="h3 mb-2 text-gray-800">Threads Review</h3>
                     <%- include('./components/dashboard-content1'); %>
                     <%- include('./components/dashboard-content2'); %>
                 </div>
@@ -401,6 +403,7 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-pie-threads-ratings.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
