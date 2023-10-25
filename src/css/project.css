@@ -56,7 +56,8 @@
     margin-left: 50px;
     width: 200px;
     height: 200px;
-    text-shadow: 8px 10px 10px #e4e00d36;
+    text-shadow: 8px 10px 10px #e4e00d5b;
+    font-weight: bold;
 }
 
 .column-back p {
@@ -70,7 +71,8 @@
     margin-left: 50px;
     width: 200px;
     height: 200px;
-    text-shadow: 8px 10px 10px #e4e00d36;
+    text-shadow: 8px 10px 10px #e4e00d67;
+    font-weight: bold;
 
 }
 
@@ -164,7 +166,7 @@
 .column-info .row .column {
     display: inline;
     justify-content: space-between;
-    width: 700px;
+    width: 600px;
     text-align: justify;
     padding-left: 50px;
 
@@ -172,8 +174,8 @@
 
 
 .column-info .column img {
-    width: 600px;
-    height: 400px;
+    width: 30rem;
+    height: auto;
     padding-left: 30px;
     padding-right: 30px;
     transition: 0.5s;
@@ -182,21 +184,37 @@
 }
 
 .column-info .column img:hover {
-    width: 620px;
-    height: 420px;
+    width: 31rem;
+    height: auto;
     padding-left: 30px;
     padding-right: 30px;
 
 }
 
+.container .text-center img {
+    width: 40rem;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.container .text-center img:hover {
+    width: 41rem;
+}
+
 .column-info h1 {
     color: black;
     text-shadow: 8px 10px 10px #00000033;
+    font-weight: bold;
+}
+
+.container h1 {
+    color: black;
+    text-shadow: 8px 10px 10px #00000033;
+    font-weight: bold;
 }
 
 .column-info p {
     margin: 20px;
-
 }
 
 
@@ -213,4 +231,37 @@
 .project-head img {
     width: 700px;
     height: 400px;
+}
+
+
+
+
+.row-main {
+    display: flex;
+
+}
+
+.row2 {
+    align-items: left;
+}
+
+.image1 {
+    background: #5B5151;
+    padding: 2vw;
+    border: solid #5B5151 0.5vw;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    margin: 2.2vw;
+}
+
+.info1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw;
+    width: 60vw;
 }
