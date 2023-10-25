@@ -37,50 +37,26 @@
     border: 0px solid #f1f1f1;
     perspective: 1000px;
     padding: 0px;
-    display: ;
 
     /* Remove this if you don't want the 3D effect */
 }
 
-.row-main{
-    display: flex;
-    
-}
 
-.row2 {
-    align-items: left;
-}
-.image1 {
-        background: #5B5151;
-    padding: 2vw;
-    border: solid #5B5151 0.5vw;
-    border-radius: 50%;
-    width: 15vw;
-    height: 15vw;
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    justify-content: center;
-    margin: 2.2vw;
-}
-.info1{
-    display: flex;
-    flex-direction: column;
-    padding: 1.5vw;
-    width: 60vw;
-}
+
+
 
 .column-front p {
     padding: 0px;
     font-size: 30px;
     /* Taille de la police pour le texte */
-    font-family: 'Brush Script MT', cursive;
+    font-family: cursive;
     text-align: center;
     color: #fff;
     margin-top: 50px;
     margin-left: 50px;
     width: 200px;
     height: 200px;
+    text-shadow: 8px 10px 10px #e4e00d36;
 }
 
 .column-back p {
@@ -94,6 +70,8 @@
     margin-left: 50px;
     width: 200px;
     height: 200px;
+    text-shadow: 8px 10px 10px #e4e00d36;
+
 }
 
 
@@ -131,8 +109,6 @@
     transform-style: preserve-3d;
     height: 175px;
     width: 175px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
     padding-top: 20px;
 }
 
@@ -191,21 +167,42 @@
     width: 700px;
     text-align: justify;
     padding-left: 50px;
+
 }
 
-.column-info img {
+
+.column-info .column img {
     width: 600px;
     height: 400px;
     padding-left: 30px;
     padding-right: 30px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+
+}
+
+.column-info .column img:hover {
+    width: 620px;
+    height: 420px;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
 .column-info h1 {
     color: black;
+    text-shadow: 8px 10px 10px #00000033;
 }
+
+.column-info p {
+    margin: 20px;
+
+}
+
 
 .project-head {
     margin: 20px;
+    padding: 20px;
 }
 
 .project-head .row .column {
