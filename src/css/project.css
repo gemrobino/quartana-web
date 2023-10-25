@@ -37,13 +37,38 @@
     border: 0px solid #f1f1f1;
     perspective: 1000px;
     padding: 0px;
+    display: ;
 
     /* Remove this if you don't want the 3D effect */
 }
 
+.row-main{
+    display: flex;
+    
+}
 
-
-
+.row2 {
+    align-items: left;
+}
+.image1 {
+        background: #5B5151;
+    padding: 2vw;
+    border: solid #5B5151 0.5vw;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    margin: 2.2vw;
+}
+.info1{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw;
+    width: 60vw;
+}
 
 .column-front p {
     padding: 0px;
