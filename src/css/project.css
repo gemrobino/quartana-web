@@ -49,7 +49,7 @@
     padding: 0px;
     font-size: 30px;
     /* Taille de la police pour le texte */
-    font-family: cursive;
+    font-family: 'Brush Script MT', cursive;
     text-align: center;
     color: #fff;
     margin-top: 50px;
@@ -181,7 +181,6 @@
 
 .project-head {
     margin: 20px;
-    padding: 20px;
 }
 
 .project-head .row .column {

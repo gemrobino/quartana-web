@@ -2,6 +2,8 @@ const express = require('express');
 const ejs = require('ejs');
 const app = express();
 const port = 3000;
+const threads_data = require('./src/js/threads_json.json');
+const mallcustomers_data = require('./src/js/mallcustomers_json.json');
 
 app.set('view engine', 'ejs')
 app.set('views', './src')
@@ -41,10 +43,14 @@ app.get("/tables", (req,res) => {
   res.render("tables")
 })
 
-app.get("/threads", (req,res) => {
-  const threads_data = require('./src/js/threads_json.json');
+app.get("/threads", (req,res) => {  
   res.render("threads", {threads_data})
 })
+
+app.get("/malls", (req,res) => {  
+  res.render("malls", {mallcustomers_data})
+})
+
 
 app.get("/utilities-color", (req, res) => {
   res.sendFile("./src/other_pages/utilities-color.html")
